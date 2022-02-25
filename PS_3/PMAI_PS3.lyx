@@ -1,0 +1,1558 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67800 | Probabilistic Methods in Artificial Intelligence
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Ex
+\lang hebrew
+ 
+\lang english
+3
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Warmup Questions 
+\end_layout
+
+\begin_layout Standard
+(a) In this graph we get that all cliques are the edges since 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ are disjoint of each other and 
+\begin_inset Formula $P_{j}$
+\end_inset
+
+ are disjoint of each other.
+ And so the set of cliques is all edges between 
+\begin_inset Formula $P_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ and described by 
+\begin_inset Formula $H$
+\end_inset
+
+ which can be thought of as adjacency matrix of the graph s.t the cliques
+ are 
+\begin_inset Formula $\{y_{i},p_{j}|H_{i,j}=1\}=E$
+\end_inset
+
+.
+ And so the joint probability of the MN can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{\Phi}(\mathcal{X})=\frac{1}{z}\prod\phi_{P_{j}}(e),\ \ s.t\ \ e\in ne(P_{j})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) bla bla
+\end_layout
+
+\begin_layout Standard
+(c)
+\begin_inset Formula 
+\[
+\widetilde{X}=\text{first n bits of : }argmax\{\prod_{i}\phi_{Y_{i}}(\widetilde{Y_{i}})\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s.t\ H\widetilde{Y}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d) We get that 
+\begin_inset Formula $(1-0.95)^{128}=0.0014$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Q1 - CT-BP Representation
+\end_layout
+
+\begin_layout Standard
+1.
+ We need to prove that 
+\begin_inset Formula $\mu_{ij}(S_{i,j})=p_{\Phi}(S_{ij})$
+\end_inset
+
+.
+ So lets us look at 
+\begin_inset Formula $\mu_{ij}(S_{i,j})$
+\end_inset
+
+ by definition:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu_{ij}(S_{i,j})=m_{i\rightarrow j}(S_{i,j})\cdot m_{j\rightarrow i}(S_{i,j})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have shown in the lecture that 
+\begin_inset Formula $m_{i\rightarrow j}(S_{i,j})=\sum_{V_{<(i,j)}}\prod_{\phi\in F_{<(i,j)}}\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $V_{<(i,j)}$
+\end_inset
+
+ are all the variable that are in 
+\begin_inset Formula $i$
+\end_inset
+
+'s side on 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ and not 
+\begin_inset Formula $j$
+\end_inset
+
+'s .
+\end_layout
+
+\begin_layout Standard
+And so, we can write this as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{V_{<(i,j)}}\prod_{\phi\in F_{<(i,j)}}\phi\cdot\sum_{V_{<(j,i)}}\prod_{\phi\in F_{<(j,i)}}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Notice that \ensuremath{V_{<(i,j)}}\ensuremath{\cup V_{<(j,i)}=\mathcal{X}/S_{i,j}}},\text{and so we can combine the arguments to:}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{\mathcal{X}/S_{i,j}}\prod_{\phi\in F_{<(i,j)}}\phi\cdot\prod_{\phi\in F_{<(j,i)}}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{In addition we can see that \ensuremath{F_{<(i,j)}}}\text{and \ensuremath{F_{<(j,i)}} are a direct sum of all \ensuremath{\Phi}:}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{\mathcal{X}/S_{i,j}}\prod\phi=P_{\Phi}(S_{ij})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.We need to prove that
+\begin_inset Formula $p_{\Phi}(\mathcal{X})=\frac{\prod_{i}\beta_{i}(C_{i})}{\prod_{i,j}\mu_{ij}(S_{ij})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lets start by opening the expression by definition of 
+\begin_inset Formula $\beta_{i}:$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta_{i}(C_{i})=\Psi_{i}(C_{i})\cdot\prod_{k\in ne(i)}(m_{k\rightarrow i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition we have already proved in Q1 that 
+\begin_inset Formula $\mu_{ij}(S_{i,j})=m_{i\rightarrow j}(S_{i,j})\cdot m_{j\rightarrow i}(S_{j,i})$
+\end_inset
+
+ so we can replace that too and get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{\prod_{i}\Psi_{i}(C_{i})\cdot\prod_{k\in ne(i)}(m_{k\rightarrow i})}{\prod_{i,j}m_{i\rightarrow j}(S_{i,j})\cdot m_{j\rightarrow i}(S_{i,j})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rearranging the enumerator gets us:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{\prod_{i}\Psi_{i}(C_{i})\cdot\prod_{i,j}m_{i\rightarrow j}\cdot m_{j\rightarrow i}}{\prod_{i,j}m_{i\rightarrow j}\cdot m_{j\rightarrow i}}=\prod_{i}\Psi_{i}(C_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\prod\phi=P_{\Phi}(\mathcal{X})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Q2- Clique-Tree Induced by Variable Elimination
+\end_layout
+
+\begin_layout Standard
+We need to prove that the resulting graph as described in the question is
+ a valid CT.
+\end_layout
+
+\begin_layout Standard
+According to the lecture a CT has 4 characteristics:
+\end_layout
+
+\begin_layout Enumerate
+Its a tree
+\end_layout
+
+\begin_layout Enumerate
+Each in holds several variables
+\end_layout
+
+\begin_layout Enumerate
+Family Preserving
+\end_layout
+
+\begin_layout Enumerate
+RIP
+\end_layout
+
+\begin_layout Standard
+Let us do it step by step.
+ We know that the clique tree must be, as its name implies, a tree.
+ And so lets see:
+\end_layout
+
+\begin_layout Standard
+We know that the VE process holds that 
+\begin_inset Formula $\tau_{i}$
+\end_inset
+
+ is used not more than one time for the calculation of 
+\begin_inset Formula $\psi_{j}$
+\end_inset
+
+.
+ Now let us assume by way of contradiction that we had a circle in our CT
+ that would mean that we would have had some 
+\begin_inset Formula $\tau_{l}$
+\end_inset
+
+ used twice which is a contradiction - and so we get that our resulting
+ CT is an acyclic connected graph - a tree.
+\end_layout
+
+\begin_layout Standard
+Each intersection holds several variables is met directly from the way the
+ VE algorithm flows - 
+\begin_inset Formula $C_{i}=scope[\psi_{i}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Family preserving is met since for each 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ we define 
+\begin_inset Formula $C_{i}=scope[\psi_{i}]$
+\end_inset
+
+, and so 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall\phi_{i}\in\{\phi|\exists j\ z_{i}\in scope[\phi_{i}]\}\ \E C_{i}\ s.t\ scope[\phi_{i}]\subset C_{i}$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+And we get that family preserving is met.
+\end_layout
+
+\begin_layout Standard
+RIP is also met.
+ Let 
+\begin_inset Formula $z$
+\end_inset
+
+ be a variable and us have two cliques wlog 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ such that 
+\begin_inset Formula $z$
+\end_inset
+
+ is in their intersection.
+ In addition let us define 
+\begin_inset Formula $C_{sum}$
+\end_inset
+
+ (being later on in the graph than 
+\begin_inset Formula $C_{1},C_{2}$
+\end_inset
+
+ - 
+\begin_inset Formula $1,2<sum)$
+\end_inset
+
+ which corespondents with 
+\begin_inset Formula $\tau_{sum}$
+\end_inset
+
+- the one we sum in the VE algorithm.
+ Notice that since we are working with a tree, there is a unique path from
+ 
+\begin_inset Formula $C_{1}\rightarrow C_{sum},C_{2}\rightarrow C_{sum}$
+\end_inset
+
+ and so calculation of the next node wlog 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ - 
+\begin_inset Formula $\psi_{k}$
+\end_inset
+
+ will be 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+, and since 
+\begin_inset Formula $z\in scope[C_{1}]$
+\end_inset
+
+ that implies that 
+\begin_inset Formula $z\in\tau_{1}$
+\end_inset
+
+.
+ Of course this logic translates to each node along the path from 
+\begin_inset Formula $C_{1}\rightarrow C_{sum}$
+\end_inset
+
+ inductively.
+ According to the algorithm we sum over 
+\begin_inset Formula $z$
+\end_inset
+
+ in 
+\begin_inset Formula $C_{sum}$
+\end_inset
+
+ and so each node on the path has 
+\begin_inset Formula $z$
+\end_inset
+
+ in its scope.
+ A direct results of that is that 
+\begin_inset Formula $z$
+\end_inset
+
+ is iin each sepset in that path.
+ We have already stated that we calculates this for 
+\begin_inset Formula $C_{1}-C_{sum}$
+\end_inset
+
+ wlog but what about 
+\begin_inset Formula $C_{1}-C_{2}$
+\end_inset
+
+? Again, since we are talking about a tree stricture we get that the path
+ between 
+\begin_inset Formula $C_{1}-C_{2}$
+\end_inset
+
+ will go through a common node in the path to 
+\begin_inset Formula $C_{sum}$
+\end_inset
+
+ and so 
+\begin_inset Formula $z$
+\end_inset
+
+ is in every sepset along the path.
+ 
+\end_layout
+
+\begin_layout Section*
+Q3 - Exact Inference on a Chain
+\end_layout
+
+\begin_layout Standard
+1.We would like to do VE over 
+\begin_inset Formula $X_{i-1},...X_{j+1}$
+\end_inset
+
+.
+ (assuming here 
+\begin_inset Formula $i<j$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+Such that:
+\end_layout
+
+\begin_layout Standard
+we would iterate over the suggested interval 
+\begin_inset Formula $t\in[i-1,j+1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for each 
+\begin_inset Formula $t$
+\end_inset
+
+ set 
+\begin_inset Formula $\phi_{t}$
+\end_inset
+
+ as all factors that have 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ in their scope.
+\end_layout
+
+\begin_layout Standard
+then sum out 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\tau_{t}=\sum_{val(x_{t})}\prod_{\phi\in\phi_{t}}\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+set 
+\begin_inset Formula $\Phi=\phi_{\neg x_{t}}\cup\tau_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and after all iteration set our result as 
+\begin_inset Formula $\tau_{j+a}(X_{i},X_{j})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The time complexity is 
+\begin_inset Formula $O(\overset{iterations}{\overbrace{n}}\cdot\overset{Summing\ L\ times\ L\times L\ matrix}{\overbrace{L^{3}}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+\end_layout
+
+\begin_layout Standard
+Let us compose such an algorithm:
+\end_layout
+
+\begin_layout Standard
+let us calculate 
+\begin_inset Formula $\tau_{forward}[i]=\sum_{val(x_{i})}\tau_{forward}[i-1]\cdot\phi(x_{i-1},x_{i})$
+\end_inset
+
+ for each 
+\begin_inset Formula $i\in[1,n-1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+let us calculate 
+\begin_inset Formula $\tau_{backwards}[i]=\sum_{val(x_{i+1})}\tau_{backwards}[i+1]\cdot\phi(x_{i},x_{i+1})$
+\end_inset
+
+ for each 
+\begin_inset Formula $i\in[n,1]$
+\end_inset
+
+(in backwards order).
+\end_layout
+
+\begin_layout Standard
+and set our result as the pairwise multiplication of 
+\begin_inset Formula $\tau_{forward}\cdot\tau_{backwards}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Basically we do VE in both directions and then multiply the results.
+\end_layout
+
+\begin_layout Standard
+The time complexity is 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ and in 
+\begin_inset Formula $L$
+\end_inset
+
+ reference it is 
+\begin_inset Formula $O(L^{3}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Q4 - Sampling on a Tree
+\end_layout
+
+\begin_layout Standard
+1.
+ Can we compute p (x | e) exactly, in a tractable way?
+\end_layout
+
+\begin_layout Standard
+We cannot.
+ To do so we need to sum over all values of 
+\begin_inset Formula $x$
+\end_inset
+
+ to compute 
+\begin_inset Formula $p(e)$
+\end_inset
+
+ which is necessary for the calculation of 
+\begin_inset Formula $p(x|e)$
+\end_inset
+
+ as per the definition of CPD.
+\end_layout
+
+\begin_layout Standard
+Can we sample directly from the distribution p (X | e)?
+\end_layout
+
+\begin_layout Standard
+Again, we cannot, for the same reasons as mentioned above, we need to compute
+ 
+\begin_inset Formula $p(e).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Can we compute p˜(x | e) = p (x, e) exactly, in a tractable way?
+\end_layout
+
+\begin_layout Standard
+Finally, yes! If we were to sample using a topological order on the graph,
+ we would do so in a linear time complicity (
+\begin_inset Formula $O(n)$
+\end_inset
+
+ - 
+\begin_inset Formula $n$
+\end_inset
+
+=#variables).
+ We would then multiple them all together to get the joint distribution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\end_layout
+
+\begin_layout Standard
+a.Firstly we will build ourselves a CT from our network, like we learned
+ in class but - with each variable 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+, and its parents assigned to a clique 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+.
+ In addition its factor is : 
+\begin_inset Formula $\phi(X_{i},pa(i))=q(X_{i}pa(i))$
+\end_inset
+
+.
+ And the edges are are between cliques that share a variable.
+ We can also see that by design this CT has the same backbone as 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ This also upholds the family preserving quality since each factor is in
+ one clique, and it upholds RIP since the edges are providing us with an
+ acyclic graph.
+ Let us now eliminate all 
+\begin_inset Formula $\mathcal{E}_{i}\in E$
+\end_inset
+
+ from our cliques.
+ If
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{i},pa(i)\in E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula 
+\[
+\phi(pa(i))=\phi(x_{i}=e(x_{i}),pa(i))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi(x_{i}=e(x_{i}),pa(i)=e(pa(i))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is still a valid CT.
+\end_layout
+
+\begin_layout Standard
+Lets calculate 
+\begin_inset Formula $q(x_{1}|e)\propto q(c_{1})\propto b(c_{1}).$
+\end_inset
+
+ and 
+\begin_inset Formula $q(e)=\sum_{val(x_{1})}b(c_{1})$
+\end_inset
+
+ and sample 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ of the values from 
+\begin_inset Formula $q(x_{1}|e)=b(c_{1})\cdot q/q(e)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let is define 
+\begin_inset Formula $t$
+\end_inset
+
+ as a part of 
+\begin_inset Formula $e$
+\end_inset
+
+ , and now we shall sample from 
+\begin_inset Formula $q(x_{i}|pa(i)=t)=\phi(x_{i},pa(i)=t)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Since we know our CT has the same backbone as 
+\begin_inset Formula $\tau$
+\end_inset
+
+ we can now eliminate cliques in 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ And so we sampled from the correct distribution because we sample at the
+ i'th time from 
+\begin_inset Formula $q(x_{i}|X_{i-1}=x_{i-1})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b.We can reweigh our samples by using normed IS:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w[m]=\frac{p(m,e)}{q(m,e)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+c.
+ Setting 
+\begin_inset Formula $j$
+\end_inset
+
+ as the number of samples we get the the estimator is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{p}(x,e)=\mathbb{E}_{q}[X]=\frac{\sum_{i=1}^{j}w[m]\cdot\boldsymbol{1_{m=x}}}{\sum_{i=1}^{j}w[m]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
