@@ -1,0 +1,364 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Part II: Practical Part Answers
+\end_layout
+
+\begin_layout Section*
+Warmup Question 1: How many degrees of freedom does the joint have? i.e.
+ how many parameters would you need to specify an arbitrary probability
+ distribution over all possible 28 × 28 binary images?
+\end_layout
+
+\begin_layout Standard
+As we have learned in class a joint probability function with 
+\begin_inset Formula $n$
+\end_inset
+
+ parameters, has 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ degrees of freedom.
+ In our case we have 784 variables, and so we would have to specify 
+\begin_inset Formula $2^{784}-1$
+\end_inset
+
+ variables.
+ 
+\end_layout
+
+\begin_layout Section*
+Warmup Question 2: How many degrees of freedom does the BN in fig.
+ 1 have?
+\end_layout
+
+\begin_layout Standard
+As we have seen in the recitation 
+\backslash
+begin_inset Formula 
+\begin_inset Formula $deg(X|Y)=\sum_{y}deg(X|y)=(|Val(X)-1|\cdot|Val(Y)|$
+\end_inset
+
+ And so in our case we have : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+deg(p_{\mathcal{B}}(X))=(\sum_{i=1}^{784}(|Val(X_{i}|-1)\cdot|Val(Z_{1})|\cdot|Val(Z_{2})|)+Val(Z_{1})|+|Val(Z_{2})|=784\cdot25\cdot25+24+24=490,048
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Q1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted1.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q1 answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Q2:What is the intuitive role of the Z1,Z2 variables in this model?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted2.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q2 answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+What is the intuitive role of the Z1,Z2 variables in this model?
+\end_layout
+
+\begin_layout Standard
+it seems as though they represent the dimensions of a lower dimension of
+ the data.
+ That is to say that if we took the data and tried to reduce its dimension
+ to 2D, then Z1 Z2 would be the axes of this latent dimension.
+ We can also see that the nunbers seem to cluster together, which supports
+ this hypothesis since we would expect this king of behaviour in a well
+ designed dimensionality reduction.
+ To take an even bigger risk and to try and interpret these axes, from this
+ figure, I would say that the first dimension is 
+\begin_inset Quotes eld
+\end_inset
+
+skewness
+\begin_inset Quotes erd
+\end_inset
+
+ to be diagonal, and he second dimension is 
+\begin_inset Quotes eld
+\end_inset
+
+roundness
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Q3:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted3.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q3 answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted4.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q3 answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Q4:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted5.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Q4 answer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+What is the relationship with the figure you produced for Q 2? 
+\end_layout
+
+\begin_layout Standard
+We can see that this image is similar to the one we saw in Q2, since both
+ project the space onto a 2D space and in both we see clustering of images
+ based in the digit.
+ In addition the realtive position of the digit cluster seem to correspond
+ and be in the same places.
+ 
+\end_layout
+
+\end_body
+\end_document
