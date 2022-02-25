@@ -1,0 +1,2446 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Curlz MT"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+67800 | Probabilistic Methods in Artificial Intelligence
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\xout default
+\lang hebrew
+|
+\xout off
+\lang english
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Ex
+\lang hebrew
+ 
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Theoretical Part Answers
+\end_layout
+
+\begin_layout Section*
+Question 1 - Xor Distributions
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted4.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us assume by way of contradiction that for the given distribution function
+ 
+\begin_inset Formula $p$
+\end_inset
+
+, there indeed exists a Bayesian Network (BN) graph 
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\mathcal{I}(\mathcal{G})=\mathcal{I}(p)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Firstly, lets take the hints advice, and test the marginal distributions.
+ Notice that our three random variables 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ are binary, and so, WLOG if we calculate 
+\begin_inset Formula $p(X=0)$
+\end_inset
+
+ its enough for calculating the marginal distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+ since 
+\begin_inset Formula $p(X=0)+p(X=1)=1.$
+\end_inset
+
+ With that in mind, lets proceed:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(X=0)\overset{\text{Summing out \ensuremath{X}}}{=}\sum_{y\in Val(Y),z\in Val(Z)}p(0,y,z)\overset{Val(Y)=Val(Z)=\{0,1\}}{=}\sum_{y\in\{0,1\}}\sum_{z\in\{0,1\}}p(0,y,z)\overset{\text{Opening}}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(0,0,0)+p(0,0,1)+p(0,1,0)+p(0,1,1)\overset{\text{Rearange in xor grouping}}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{y,z\in\{(0,0),(1,1)\}}p(0,y,z|0\xor y\xor z=0)+\sum_{y,z\in\{(0,1),(0,1)\}}p(0,y,z|0\xor y\xor z=1)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\sum_{y,z\in\{(0,0),(1,1)\}}\frac{1}{12}+\sum_{y,z\in\{(0,1),(0,1)\}}\frac{1}{6}\overset{\text{2 components in each sum}}{=}\frac{2}{12}+\frac{2}{6}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow p(X=1)=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see the case of looking at the distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+ is not special, and from the symmetry of the xor operation we can deduce
+ that the marginal distributions of 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ are identical, and so we have done the calculation for all of them WLOG:
+ 
+\begin_inset Formula $P(X)=P(Y)=P(Z)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Lets us now continue with the hint, and look at the dependency (or lack
+ there of) of say, 
+\begin_inset Formula $X,Y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x|y)\overset{\text{def}}{=}\frac{p(x,y)}{p(y)}\overset{\text{Summing out \ensuremath{Z}}}{=}\frac{\sum_{z\in Val(Z)}p(x,y,z)}{p(y)}\overset{\text{There are only two options: Either we get xor=0, or xor=1}}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{p(x,y,z|x\xor y\xor z=0)+p(x,y,z|x\xor y\xor z=1)}{p(y)}=\frac{\frac{1}{12}+\text{\ensuremath{\frac{1}{6}}}}{p(y)}=\frac{\frac{1}{4}}{p(y)}=\frac{\frac{1}{2}\cdot\frac{1}{2}}{p(y)}=\frac{p(x)\cdot\cancel{p(y)}}{\cancel{p(y)}}=p(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Meaning that 
+\begin_inset Formula $p(x|y)=p(x)$
+\end_inset
+
+, and this implies that 
+\begin_inset Formula $y$
+\end_inset
+
+ gives us no new information.
+ This also indicates that 
+\begin_inset Formula $X\perp Y.$
+\end_inset
+
+ And again from the symmetry of the xor operation we get that all three
+ random variables 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ are independent.
+\end_layout
+
+\begin_layout Standard
+Now, armed we our new knowledge ( 
+\begin_inset Formula $P(X)=P(Y)=P(Z)=\frac{1}{2}$
+\end_inset
+
+ and that 
+\begin_inset Formula $X\perp Y\perp Z$
+\end_inset
+
+), we can get back to our initial assumption about the existence of 
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{It is given that \ensuremath{p} holds that : \ensuremath{p(x,y,z|x\xor y\xor z=0)=\frac{1}{12}\cdot\#\{x\xor y\xor z=0\}=\frac{4}{12}=\frac{1}{3}}. }
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Let us calculate the same proposition in the distribution \ensuremath{\mathcal{G}} spaces: \ensuremath{p_{b}} which is defined by \ensuremath{p_{b}(x_{1},...,x_{n})=\prod_{i}p(x_{i}|x_{pa(i)})}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{b}(x,y,z|x\xor y\xor z=0)\overset{\text{According to xor truth table}}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{b}(0,0,0)+p_{b}(0,1,1)+p_{b}(1,0,1)+p_{b}(1,1,0)\overset{p_{b}(x_{1},...,x_{n})=\prod_{i}p(x_{i}|x_{pa(i)})}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\prod_{a\in\{X,Y,Z\}}p(a=0|x_{pa(i)})+\prod_{\underset{a\in\{X,Y,Z\}}{i\in\{0,1,1\}}}p(a=i|x_{pa(i)})+\prod_{\underset{a\in\{X,Y,Z\}}{i\in\{1,0,1\}}}p(a=i|x_{pa(i)})+\prod_{\underset{a\in\{X,Y,Z\}}{i\in\{1,1,0\}}}p(a=i|x_{pa(i)})\overset{X\perp Y\perp Z}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\prod_{a\in\{X,Y,Z\}}p(a=0)+\prod_{a\in\{X,Y,Z\},i\in\{0,1,1\}}p(a=i)+\prod_{a\in\{X,Y,Z\},i\in\{1,0,1\}}p(a=i)+\prod_{a\in\{X,Y,Z\},i\in\{1,1,0\}}p(a=i)\overset{\text{Symmetry}}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\frac{1}{2})^{3}+(\frac{1}{2})^{3}+(\frac{1}{2})^{3}+(\frac{1}{2})^{3}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And so we get that 
+\begin_inset Formula $p(x,y,z|x\xor y\xor z=0)=\frac{1}{3}\neq\frac{1}{2}=p_{b}(x,y,z|x\xor y\xor z=0)\Rightarrow p_{b}\neq p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Which implies that our assumption that 
+\begin_inset Formula $\E$
+\end_inset
+
+
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\mathcal{I}(\mathcal{G})=\mathcal{I}(p)$
+\end_inset
+
+ is wrong.
+\end_layout
+
+\begin_layout Section*
+Question 2 - Importance of Being Acyclic
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted5.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us define a BN 
+\begin_inset Formula $\mathcal{B}=\li\mathcal{G},p_{\mathcal{B}}\ri$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ has cycles with 2 binary random variables 
+\begin_inset Formula $X_{1},X_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted20.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The graph of 
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Set 
+\begin_inset Formula $p_{\mathcal{}}(X_{i}=0)=0.3,p_{\mathcal{}}(X_{i}=1)=0.7$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=0,X_{j}=0)=0.1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=1,X_{j}=0)=p_{\mathcal{}}(X_{i}=0,X_{j}=1)=0.2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=1,X_{j}=1)=0.5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{And}:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=0|pa(X_{i})=0)=\frac{p_{\mathcal{}}(X_{i}=0,pa(X_{i})=0)}{p_{\mathcal{}}(pa(X_{i})=0)}=\frac{0.1}{0.3}=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=0|pa(X_{i})=1)=\frac{p_{\mathcal{}}(X_{i}=0,pa(X_{i})=1)}{p_{\mathcal{}}(pa(X_{i})=1)}=\frac{0.2}{0.7}=\frac{2}{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=1|pa(X_{i})=0)=\frac{p_{\mathcal{}}(X_{i}=1,pa(X_{i})=0)}{p_{\mathcal{}}(pa(X_{i})=0)}=\frac{0.2}{0.3}=\frac{2}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{}}(X_{i}=1|pa(X_{i})=1)=\frac{p_{\mathcal{}}(X_{i}=1,pa(X_{i})=1)}{p_{\mathcal{}}(pa(X_{i})=1)}=\frac{0.5}{0.7}=\frac{5}{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Let us calculate the joint probability distribution p_{\mathcal{B}}:}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{B}}(X_{1}=0,X_{2}=0)=p_{\mathcal{}}(X_{1}=0|X_{2}=0)\cdot p_{\mathcal{}}(X_{2}=0|X_{1}=0)=\frac{1}{3}\cdot\frac{1}{3}=\frac{1}{9}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{B}}(X_{1}=0,X_{2}=1)=p_{\mathcal{}}(X_{1}=0|X_{2}=1)\cdot p_{\mathcal{}}(X_{2}=1|X_{1}=0)=\frac{2}{7}\cdot\frac{2}{3}=\frac{4}{21}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{B}}(X_{1}=1,X_{2}=0)=p_{\mathcal{}}(X_{1}=1|X_{2}=0)\cdot p_{\mathcal{}}(X_{2}=0|X_{1}=1)=\frac{2}{7}\cdot\frac{2}{3}=\frac{4}{21}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{\mathcal{B}}(X_{1}=1,X_{2}=1)=p_{\mathcal{}}(X_{1}=1|X_{2}=1)\cdot p_{\mathcal{}}(X_{2}=1|X_{1}=1)=\frac{5}{7}\cdot\frac{5}{7}=\frac{25}{49}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{And in summation:}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{X_{1},X_{2}}p_{\mathcal{B}}(X_{1},X_{2})=1.00226\neq1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which means this is not a valid probability distribution, as required.
+\end_layout
+
+\begin_layout Section*
+Question 3 - Removing a Variable From a Bayesian Network
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted8.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted13.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BN after removing 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explanation: Firsly since we remove A we need to assume that A is indeed
+ unobserved.
+ Next, our goal here is to to preserve all independencies in the original
+ graph:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B\perp E,T,N
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E\perp B,T,N
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T\perp B,E,A,N,M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N\perp B,E,A,T,J
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\perp T,N|B,E
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J\perp B,E,N,M|T,A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M\perp B,E,T,J|A,N
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Firstly, nodes that are unrelated to 
+\begin_inset Formula $A$
+\end_inset
+
+ are untouched and therefore we leave them be (Blue edges).
+ The most obvious connection we see is that with 
+\begin_inset Formula $A$
+\end_inset
+
+ gone, there exist active paths between 
+\begin_inset Formula $A$
+\end_inset
+
+'s parents and children.
+ And so we need to connect 
+\begin_inset Formula $A$
+\end_inset
+
+'s parents - 
+\begin_inset Formula $B,E$
+\end_inset
+
+ to A's children - 
+\begin_inset Formula $J,M$
+\end_inset
+
+ (Orange edges).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted14.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 1: Connecting The Parents of A to its Children (Orange Edges) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+In addition we know that all children of 
+\begin_inset Formula $A$
+\end_inset
+
+ will now have an active path between them (called in book 
+\begin_inset Quotes eld
+\end_inset
+
+common cause trail) we must draw an edge between them (the order does not
+ matter, and we could use the topological ordering of the graph to decide
+ the direction of the edge), And so we draw an edge from 
+\begin_inset Formula $J$
+\end_inset
+
+ to 
+\begin_inset Formula $M$
+\end_inset
+
+ (Green edge).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted15.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 2: Connecting Children of A in Topological Order (Green Edge)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Finally we need to attend to the v structure that was between 
+\begin_inset Formula $T\rightarrow J\leftarrow A.$
+\end_inset
+
+ We now see that there is an active path between 
+\begin_inset Formula $T,M$
+\end_inset
+
+, since there might be an 
+\begin_inset Quotes eld
+\end_inset
+
+explaining away
+\begin_inset Quotes erd
+\end_inset
+
+ type of relationship here (if 
+\begin_inset Formula $T$
+\end_inset
+
+ happened, and it caused 
+\begin_inset Formula $J$
+\end_inset
+
+, it means that our inference of the existence of 
+\begin_inset Formula $A$
+\end_inset
+
+ has less meaning, and we should update our probability of 
+\begin_inset Formula $M$
+\end_inset
+
+ happening).
+ And so we need to connect an edge from 
+\begin_inset Formula $T$
+\end_inset
+
+ to 
+\begin_inset Formula $M$
+\end_inset
+
+ (Red edge).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted16.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Step 3: Connecting The Parents of The Child Who Just Became The Parent in
+ The Topological Order to The Child As Well (Red Edge)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+As we can there are 3 classes of new edges we need to add (color coded in
+ my answer), and we will generalize this form in the next question.
+ Note: since we have chosen the edge from 
+\begin_inset Formula $J$
+\end_inset
+
+ to 
+\begin_inset Formula $M$
+\end_inset
+
+ arbitrarily, we could have had an edge from 
+\begin_inset Formula $M$
+\end_inset
+
+ to 
+\begin_inset Formula $J$
+\end_inset
+
+ and then we would have also had 
+\begin_inset Formula $N$
+\end_inset
+
+ to 
+\begin_inset Formula $J$
+\end_inset
+
+ from the same logic.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted11.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose a graph with a topological order on the variables: 
+\begin_inset Formula $V=\{X_{i}\}_{i=1}^{n}$
+\end_inset
+
+ and suppose we want to remove the variable 
+\begin_inset Formula $R=X_{j}\ s.t\ \ j\in[n]$
+\end_inset
+
+.
+ Based on my answer to question 3.1, intuitively we need to keep all of the
+ vertices that have to relation to 
+\begin_inset Formula $R$
+\end_inset
+
+ the same, and do the following 3 operation:
+\end_layout
+
+\begin_layout Enumerate
+Connect the all of the parents of 
+\begin_inset Formula $R$
+\end_inset
+
+ to all of the children (directly connected to 
+\begin_inset Formula $R$
+\end_inset
+
+) - meaning 
+\begin_inset Formula $\forall p\in pa(R),c\in V\ s.t\ pa(c)=R$
+\end_inset
+
+ connect 
+\begin_inset Formula $p\rightarrow c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Connect all of the children of 
+\begin_inset Formula $R$
+\end_inset
+
+ together based on the topological order - meaning we will connect the children
+ 
+\begin_inset Formula $c_{1},...c_{m}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall k,l\ c_{k}\rightarrow c_{l}\iff k<l$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For each pair of children 
+\begin_inset Formula $c_{1},c_{2}$
+\end_inset
+
+ that were connected in step 2 such that 
+\begin_inset Formula $c_{1}\rightarrow c_{2}$
+\end_inset
+
+ we need to connect the parents of 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ - 
+\begin_inset Formula $\forall p\in pa(c_{1}),\text{connect \ensuremath{p\rightarrow c_{2}}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In conclusion the set of parents is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{For convinience sake let us denote:}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\overset{\text{Connecting to the parents of the removed node}}{\overbrace{pa(pa(R))}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=\overset{\text{Connecting to my siblings in topological order}}{\overbrace{\{c_{j}|pa(c_{j})\ni R,\ j<i\}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=\overset{\text{Connecting to \text{the paretns of those siblings im connected to in topological order}}}{\overbrace{\{pa(c_{j})|pa(c_{j})\ni R,\ j<i\}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall x\in V:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+pa(x_{i})=\begin{cases}
+A\cup B\text{ }\cup C & pa(x_{i})\ni R\\
+\\
+\overset{\text{If I'm not related to the removed node, do not change anything}}{\overbrace{pa(x_{i})}} & pa(x_{i})\not\ni R
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Question 4 - Towards Inference in Bayesian Networks
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted9.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Solution:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let us assume a topological ordering on our variables, now:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(X_{i}|x_{-i})\overset{\text{Def}}{=}\frac{p(x_{1},...,x_{n})}{p(x_{-i})}\overset{BN}{=}\frac{\prod_{j}p(x_{j}|pa(j))}{p(x_{-i})}\overset{\text{Go over all possible assignments of \ensuremath{X_{i}}}}{=}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\prod_{j}p(x_{j}|pa(j))}{\sum_{x_{i}}p(X_{i}=x_{i},x_{-i})}\overset{BN}{=}\frac{\prod_{j}p(x_{j}|pa(j))}{\sum_{x_{i}}\prod_{j=1}^{n}p(x_{j}|pa(j))}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{Notice that \ensuremath{X_{i}} cant be a parent of nodes labled witha lower topological order, and so:}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\frac{\prod_{j}p(x_{j}|pa(j))}{\sum_{x_{i}}\prod_{j=i}^{n}p(x_{j}|pa(j))}=\frac{p(X_{i}|pa(i))\cdot\prod_{j:X_{i}\in pa(j)}p(X_{j}|pa(j))}{\sum_{x_{i}}p(X_{i}|pa(i))\cdot\prod_{j:X_{i}\in pa(j)}p(X_{j}|pa(j))}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section*
+Question 5 - 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pasted17.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Soluion:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Counter example to the statement:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted18.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Graph 
+\begin_inset Formula $V,$
+\end_inset
+
+ Graph 
+\begin_inset Formula $inv-V$
+\end_inset
+
+ have the same skeleton
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see graph 
+\begin_inset Formula $V$
+\end_inset
+
+ has a dependency such that 
+\begin_inset Formula $P\not\models A\perp B|C\ \ ,\ \ B\perp A|C$
+\end_inset
+
+ , because of the nature if the v-structure.
+\end_layout
+
+\begin_layout Standard
+While the independencies of graph 
+\begin_inset Formula $inv-V$
+\end_inset
+
+ are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\perp B|C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B\perp A|C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Soluion:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\mathcal{G}_{1},\mathcal{G}_{2}$
+\end_inset
+
+ be 2 BN graphs, such that they have the same skeleton and the same set
+ of v-structures, then we need to prove that 
+\begin_inset Formula $\mathcal{I}(\mathcal{G}_{1})=\mathcal{I}(\mathcal{G}_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We will show an equivalence of being in an active path in 
+\begin_inset Formula $\mathcal{G}_{1}$
+\end_inset
+
+ and in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Firstly let us observe that since the two graphs have the same skeleton,
+ and so any path that exists in 
+\begin_inset Formula $\mathcal{G}_{1}$
+\end_inset
+
+ also exists in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+.
+ This will help us with the following lemma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\forall\text{ active path \ensuremath{X_{1}-...-X_{n}\in\mathcal{G}_{1}\text{, given observed RN's \ensuremath{Z,} }} X_{1}-...-X_{n}\in\mathcal{G}_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Proof:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+WLOG Let 
+\begin_inset Formula $W=X_{1}-...-X_{n}$
+\end_inset
+
+ be an active path in 
+\begin_inset Formula $\mathcal{G}_{1}$
+\end_inset
+
+, and let 
+\begin_inset Formula $i\in[2,k-1]$
+\end_inset
+
+ such that 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is a node somewhere in the middle of the active path.
+ 
+\end_layout
+
+\begin_layout Standard
+We can split the space into 2 options either 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is the 
+\begin_inset Quotes eld
+\end_inset
+
+sink
+\begin_inset Quotes erd
+\end_inset
+
+ of a v-structure, or it isn't:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is indeed the 
+\begin_inset Quotes eld
+\end_inset
+
+sink
+\begin_inset Quotes erd
+\end_inset
+
+ of a v-structure, meaning 
+\begin_inset Formula $\E j,k$
+\end_inset
+
+ such that 
+\begin_inset Formula $X_{j}\rightarrow X_{i}\leftarrow X_{k}.$
+\end_inset
+
+ Because 
+\begin_inset Formula $W$
+\end_inset
+
+ be an active path in 
+\begin_inset Formula $\mathcal{G}_{1}$
+\end_inset
+
+ we can also deduce that either 
+\begin_inset Formula $X_{i}\in Z$
+\end_inset
+
+ or 
+\begin_inset Formula $\E c\in\overset{\text{Descendants of \ensuremath{X_{i}}}}{\overbrace{\{X_{m}|\E I=(i=I_{1},...,I_{s}=m)\subset[k]\text{ s.t }\E X_{I_{1}}\rightarrow...\rightarrow X_{I_{s}}\in\mathcal{G}_{1}\}}}$
+\end_inset
+
+ s.t 
+\begin_inset Formula $c\in Z$
+\end_inset
+
+ (in layman's terms it means that either 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is in the observable set 
+\begin_inset Formula $Z$
+\end_inset
+
+ or one of its descendants is).
+ And again we have two options:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $X_{i}\in Z$
+\end_inset
+
+: We know that both 
+\begin_inset Formula $\mathcal{G}_{1},\mathcal{G}_{2}$
+\end_inset
+
+ have the same skeleton, and we have also inferred that any path that exists
+ in 
+\begin_inset Formula $\mathcal{G}_{1}$
+\end_inset
+
+ also exists in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+, in particular this active v-structure we have in 
+\begin_inset Formula $\mathcal{G}_{1}.$
+\end_inset
+
+ This means that this path will also be active in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+If one of its descendants of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is in 
+\begin_inset Formula $Z$
+\end_inset
+
+: We can see that this node 
+\begin_inset Formula $c$
+\end_inset
+
+ must also be a descendant of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+, since we assumed that 
+\begin_inset Formula $\mathcal{G}_{1},\mathcal{G}_{2}$
+\end_inset
+
+ have the same skeleton, and so 
+\begin_inset Formula $c$
+\end_inset
+
+ must also be a descendant of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+.
+ And this also means that this path will also be active in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Meaning that in each case having a v-structure will lead to an active path
+ in both graphs.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is not the 
+\begin_inset Quotes eld
+\end_inset
+
+sink
+\begin_inset Quotes erd
+\end_inset
+
+ of a v-structure, and we know that 
+\begin_inset Formula $W$
+\end_inset
+
+ is active, it immediately implies that 
+\begin_inset Formula $X_{i}\notin Z$
+\end_inset
+
+.
+ This is since we assumed that the two graphs have the same v-stuctures,
+ and since 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is not the 
+\begin_inset Quotes eld
+\end_inset
+
+sink
+\begin_inset Quotes erd
+\end_inset
+
+ of a v-structure in 
+\begin_inset Formula $\mathcal{G}_{1}$
+\end_inset
+
+ it follows that it isn't a part of a v-structure in 
+\begin_inset Formula $\mathcal{G}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Soluion:
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we seen by now, having the same skeleton is necessary for being I-equivalent,
+ but not sufficient, ans so we will construct a two graphs 
+\begin_inset Formula $\mathcal{G}_{1},\mathcal{G}_{2}$
+\end_inset
+
+ that have the same skeleton but different set of v-structures, such that
+ 
+\begin_inset Formula $\mathcal{I}(\mathcal{G}_{1})=\mathcal{I}(\mathcal{G}_{2})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename pasted23.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Graphs 
+\begin_inset Formula $\mathcal{G}_{1},\mathcal{G}_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see all nodes are connected and so 
+\begin_inset Formula $\mathcal{I}(\mathcal{G}_{1})=\mathcal{I}(\mathcal{G}_{2})$
+\end_inset
+
+.
+ And yet they do not have the same set of v-stuctures.
+\end_layout
+
+\begin_layout Part*
+Part II: Practical Part Answers
+\end_layout
+
+\begin_layout Section*
+Warmup Question 1: How many degrees of freedom does the joint have? i.e.
+ how many parameters would you need to specify an arbitrary probability
+ distribution over all possible 28 × 28 binary images?
+\end_layout
+
+\begin_layout Standard
+As we have learned in class a joint probability function with 
+\begin_inset Formula $n$
+\end_inset
+
+ parameters, has 
+\begin_inset Formula $2^{n}-1$
+\end_inset
+
+ degrees of freedom.
+ In our case we have 784 variables, and so we would have to specify 
+\begin_inset Formula $2^{784}-1$
+\end_inset
+
+ variables.
+ 
+\end_layout
+
+\begin_layout Section*
+Warmup Question 2: How many degrees of freedom does the BN in fig.
+ 1 have?
+\end_layout
+
+\begin_layout Standard
+As we have seen in the recitation 
+\backslash
+begin_inset Formula 
+\begin_inset Formula $deg(X|Y)=\sum_{y}deg(X|y)=(|Val(X)-1|\cdot|Val(Y)|$
+\end_inset
+
+ And so in our case we have : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+deg(p_{\mathcal{B}}(X))=(\sum_{i=1}^{784}(|Val(X_{i}|-1)\cdot|Val(Z_{1})|\cdot|Val(Z_{2})|)+Val(Z_{1})|+|Val(Z_{2})|=784\cdot25\cdot25+24+24=490,048
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
